@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+        /* Colors */
+
+    /* Primary */
+
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very_dark_blue: hsl(224, 21%, 14%);
+
+        /* Trypography */
+
+    /* Body Copy */
+
+    --fs: 16px;
+
+    /* Font */
+
+    --Ff: 'Inter', sans-serif;
+    --Fw: 500, 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Very-light-grayish-blue);
+    font-family: var(--Ff);
+}
+
+body .paragraph {
+    font-weight: var(--Fw);
+    line-height: 1.3rem;
+}
+
+.container-g {
+    background: var(--White);
+    margin: 30px auto;
+    max-width: 730px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+    /* Modificando el Header */
+
+.pad {
+    width: 680px;
+    height: 810px;
+    margin: auto;
+}
+
+.superior {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px 40px 0;
+}
+
+.Title {
+    display: flex;
+    width: 28%;
+    justify-content: space-between;
+    font-size: 22px;
+
+}
+
+.Number {
+    margin-top: 3px;
+    font-size: 16px;
+    width: 15%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: var(--White);
+}
+
+.Number.white {
+    display: none;
+}
+
+.Option {
+    font-size: 14px;
+    padding: 4px;
+    color: var(--Dark-grayish-blue);
+    font-weight: var(--Fw);
+}
+
+    /* Notificaiones */
+
+.container {
+    margin: auto;
+}
+
+.notification {
+    display: flex;
+    width: 90%;
+    height: 70px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.n1 {
+    background-color: var(--Light-grayish-blue-2);
+    border-radius: 10px;
+}
+
+.n1.white {
+    background-color: white;
+}
+
+.n-1 {
+    height: 50px;
+}
+
+.punto.white {
+    display: none;
+}
+
+.n2 {
+    margin-top: 1.5rem;
+    height: 7rem;
+}
+
+.n-2 {
+    height: 3rem;
+}
+
+.n-3 {
+    height: 4rem;
+}
+
+.n3 {
+    margin-bottom: 30px;
+}
+
+.perfil {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: 1.5rem;
+}
+
+.op {
+    color: var(--Dark-grayish-blue);
+}
+
+.min {
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 0.7rem;
+}
+
+.msg {
+    border: 1px solid var(--Light-grayish-blue-2);
+    border-radius: 4px;
+    height: 55%;
+    width: 96%;
+    font-size: 16px;
+    color: var(--Dark-grayish-blue);
+    padding: 10px;
+}
+
+.paragraph {
+    margin-bottom: 5px;
+    padding-right: 10rem;
+}
+
+.np {
+    color: var(--Dark-grayish-blue);
+}
+
+s {
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+}
+
+/* Cursor: pointer */
+
+.Option:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.op:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.np:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.name:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.msg:hover {
+    cursor: pointer;
+    background: var(--Light-grayish-blue-1);
+}
+
+.chess:hover {
+    cursor: pointer;
+    border: 2.3px solid var(--Light-grayish-blue-1);
+    border-radius: 8px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 700px) {
+    .pad {
+        max-width: 660px;
+        width: 90%;
+        height: 100%;
+    }
+
+    .superior {
+        max-width: 600px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .Title {
+        width: 35%;
+    }
+
+    .container {
+        max-width: 600px;
+        width: 80%;
+        padding-right: 40px;
+    }
+
+    .notification {
+        height: 100%;
+        width: 100%;
+    }
+
+    .paragraph {
+        padding-right: 8px;
+    }
+
+    .chess {
+        width: 40px;
+        height: 40px;
+    }
+}
